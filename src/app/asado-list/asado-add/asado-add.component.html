@@ -1,0 +1,20 @@
+<form #f class="form-horizontal" (ngSubmit)="addAsado(f)">
+  <div class="form-group">
+    <label class="control-label col-sm-2">Name:</label>
+    <div class="col-sm-8">
+      <input type="text" class="form-control" name="asado_name" placeholder="Asado Name" required [(ngModel)]="asado.name">
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-2">Price:</label>
+    <div class="col-sm-8">
+      <input type="number" class="form-control" name="asado_price" placeholder="Asado Price" required [(ngModel)]="asado.price">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <button type="submit" class="btn btn-success btn-block">Save</button>
+    </div>
+  </div>
+</form>
